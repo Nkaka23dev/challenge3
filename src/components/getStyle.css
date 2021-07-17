@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+:root{
+    --tenny-tawn:#d65108;
+    --nkaka:#b54507;
+} 
+.btn{
+    cursor: pointer;
+    outline: 0;
+    padding: 0.1rem 0.4rem;
+    border: 0.3px solid #c0bcbc;
+    background-color: #eeeaea;
+} 
+.btn:hover{
+    background: #b1afaf;
+    color: white;
+}
+.text{
+opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container{
+    min-height: 100vh;
+} 
+.wrapper{
+    max-width: 1280px;
+    margin:0 auto;
+    padding:2rem;
+    background: #fff;
+    text-align: center;
+} 
+.search-album{
+    margin:2rem 0;
+}
+.search-album cite{
+    font-size: 1rem;
+}
+.search-box{
+margin: 1.2rem;
+display: flex;
+} 
+form{
+    padding: 0 100px;
+}
+.search-control{ 
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px solid #9b9898;
+    font-size: 14px;
+}
+.search-control:focus{
+    outline: 0;
+    border-color: #777;
+}
+.search-control::placeholder{
+    color: #646161;
+    padding: 0 0.2rem;
+}
+.album-result{
+    margin-top:2rem;
+}
+#photo{
+    /* margin:rem 0; */ 
+    margin-top: 0;
+}
+.photo-item{
+ overflow: hidden;
+ box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+ margin: 0.2rem 0;
+}
+.photo-img img{
+    width: 100%;
+    display: block;
+}
+.photo-name{
+    padding: 1.5rem 0.5rem;
+}
+.photo-name h4{
+    font-size: 1.1rem;
+}
+@media screen and (min-width:768px) {
+    #photo{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+        }   
+} 
+@media only screen and (max-width:880px){
+    #photo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        }    
+        form{
+            padding: 0 1px;
+        } 
+        .title{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .photo-name h4{
+            font-size: 1rem;
+        }
+}  
