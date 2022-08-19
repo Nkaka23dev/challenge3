@@ -47,7 +47,7 @@ class Image extends Component {
                     <input type="text" className="search-control" placeholder="Enter Album ID.."
                      name="albumId"
                     onChange={this.inputHandler} value={albumId}/> 
-                    <button className="search-btn btn" type="submit">Get Album Photos by ID
+                    <button className="search-btn btn" type="submit">Get Album Photos by ID(1-100)
                      </button>
                 </form> 
                   <div className="album-result"> 
